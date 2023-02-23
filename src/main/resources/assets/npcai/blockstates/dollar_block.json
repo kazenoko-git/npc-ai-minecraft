@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "npcai:block/dollar_block"
+    }
+  }
+}

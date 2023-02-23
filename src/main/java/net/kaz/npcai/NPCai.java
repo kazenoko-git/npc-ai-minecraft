@@ -1,6 +1,8 @@
 package net.kaz.npcai;
 
 import com.mojang.logging.LogUtils;
+import net.kaz.npcai.block.ModBlocks;
+import net.kaz.npcai.item.ModItems;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -22,6 +24,7 @@ public class NPCai
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
     }
