@@ -1,5 +1,7 @@
 {
   "item.npcai.dollar": "Cash",
   "itemGroup.coolland": "Cool Land: Money",
-  "block.npcai.dollar_block": "Computer"
+  "block.npcai.dollar_block": "Computer",
+  "key.category.npcai.k": "Cool Land",
+  "key.npcai.drink_water": "Drink Water"
 }
