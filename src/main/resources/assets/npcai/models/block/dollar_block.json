@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "npcai:block/dollar_block"
+    "all": "coolland:block/dollar_block"
   }
 }

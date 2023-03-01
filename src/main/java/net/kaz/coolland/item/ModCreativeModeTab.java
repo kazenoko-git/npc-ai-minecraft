@@ -1,4 +1,4 @@
-package net.kaz.npcai.item;
+package net.kaz.coolland.item;
 
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;

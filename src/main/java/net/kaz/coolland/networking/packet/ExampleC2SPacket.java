@@ -1,4 +1,4 @@
-package net.kaz.npcai.networking.packet;
+package net.kaz.coolland.networking.packet;
 
 
 import net.minecraft.network.FriendlyByteBuf;

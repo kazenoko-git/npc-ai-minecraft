@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "npcai:block/dollar_block"
+      "model": "coolland:block/dollar_block"
     }
   }
 }

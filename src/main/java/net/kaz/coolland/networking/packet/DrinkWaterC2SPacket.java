@@ -1,6 +1,6 @@
-package net.kaz.npcai.networking.packet;
+package net.kaz.coolland.networking.packet;
 
-import net.kaz.npcai.thirst.PlayerThirstProvider;
+import net.kaz.coolland.thirst.PlayerThirstProvider;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.chat.Component;
@@ -14,8 +14,8 @@ import net.minecraftforge.network.NetworkEvent;
 import java.util.function.Supplier;
 
 public class DrinkWaterC2SPacket {
-    private static final String MESSAGE_DRINK_WATER = "message.tutorialmod.drink_water";
-    private static final String MESSAGE_NO_WATER = "message.tutorialmod.no_water";
+    private static final String MESSAGE_DRINK_WATER = "message.coolland.drink_water";
+    private static final String MESSAGE_NO_WATER = "message.coolland.no_water";
 
     public DrinkWaterC2SPacket() {
 

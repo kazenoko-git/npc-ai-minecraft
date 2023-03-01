@@ -1,4 +1,4 @@
-package net.kaz.npcai.thirst;
+package net.kaz.coolland.thirst;
 
 import net.minecraft.nbt.CompoundTag;
 

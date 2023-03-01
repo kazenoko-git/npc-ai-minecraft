@@ -1,7 +1,9 @@
 {
-  "item.npcai.dollar": "Cash",
+  "item.coolland.dollar": "Cash",
   "itemGroup.coolland": "Cool Land: Money",
-  "block.npcai.dollar_block": "Computer",
-  "key.category.npcai.k": "Cool Land",
-  "key.npcai.drink_water": "Drink Water"
+  "block.coolland.dollar_block": "Computer",
+  "key.category.coolland.k": "Cool Land",
+  "key.coolland.drink_water": "Drink Water",
+  "item.coolland.katana": "Katana",
+  "item.coolland.unsheathed_katana": "Sheathed Katana"
 }

@@ -1,21 +1,17 @@
-package net.kaz.npcai.event;
-import net.kaz.npcai.NPCai;
-import net.kaz.npcai.client.ThirstHudOverlay;
-import net.kaz.npcai.networking.ModMessages;
-import net.kaz.npcai.networking.packet.DrinkWaterC2SPacket;
-import net.kaz.npcai.networking.packet.ExampleC2SPacket;
-import net.kaz.npcai.util.KeyBinding;
-import net.minecraft.client.Minecraft;
-import net.minecraft.network.chat.Component;
+package net.kaz.coolland.event;
+import net.kaz.coolland.CoolLand;
+import net.kaz.coolland.client.ThirstHudOverlay;
+import net.kaz.coolland.networking.ModMessages;
+import net.kaz.coolland.networking.packet.DrinkWaterC2SPacket;
+import net.kaz.coolland.util.KeyBinding;
 import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.client.event.InputEvent;
 import net.minecraftforge.client.event.RegisterGuiOverlaysEvent;
 import net.minecraftforge.client.event.RegisterKeyMappingsEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 public class ClientEvents {
-    @Mod.EventBusSubscriber(modid = NPCai.MOD_ID, value = Dist.CLIENT)
+    @Mod.EventBusSubscriber(modid = CoolLand.MOD_ID, value = Dist.CLIENT)
     public static class ClientForgeEvents {
         @SubscribeEvent
         public static void onKeyInput(InputEvent.Key event) {
@@ -25,7 +21,7 @@ public class ClientEvents {
         }
     }
 
-    @Mod.EventBusSubscriber(modid = NPCai.MOD_ID, value = Dist.CLIENT, bus = Mod.EventBusSubscriber.Bus.MOD)
+    @Mod.EventBusSubscriber(modid = CoolLand.MOD_ID, value = Dist.CLIENT, bus = Mod.EventBusSubscriber.Bus.MOD)
     public static class ClientModBusEvents {
         @SubscribeEvent
         public static void onKeyRegister(RegisterKeyMappingsEvent event) {

@@ -1,8 +1,8 @@
-package net.kaz.npcai.block;
+package net.kaz.coolland.block;
 
-import net.kaz.npcai.NPCai;
-import net.kaz.npcai.item.ModCreativeModeTab;
-import net.kaz.npcai.item.ModItems;
+import net.kaz.coolland.CoolLand;
+import net.kaz.coolland.item.ModCreativeModeTab;
+import net.kaz.coolland.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -17,7 +17,7 @@ import java.util.function.Supplier;
 
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
-            DeferredRegister.create(ForgeRegistries.BLOCKS, NPCai.MOD_ID);
+            DeferredRegister.create(ForgeRegistries.BLOCKS, CoolLand.MOD_ID);
 
     public static final RegistryObject<Block> DOLLAR_BLOCK = registerBlock("dollar_block", () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(2f)), ModCreativeModeTab.CL_TAB);
 

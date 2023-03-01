@@ -1,4 +1,4 @@
-package net.kaz.npcai.client;
+package net.kaz.coolland.client;
 
 public class ClientThirstData {
     private static int playerThirst;

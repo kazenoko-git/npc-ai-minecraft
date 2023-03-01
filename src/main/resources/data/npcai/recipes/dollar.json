@@ -10,7 +10,7 @@
     "/": {"item": "minecraft:diamond"}
   },
   "result": {
-    "item": "npcai:dollar",
+    "item": "coolland:dollar",
     "count": 8
   }
 }

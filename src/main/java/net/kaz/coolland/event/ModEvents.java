@@ -1,38 +1,27 @@
-package net.kaz.npcai.event;
+package net.kaz.coolland.event;
 
-import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
-import net.kaz.npcai.NPCai;
-import net.kaz.npcai.item.ModItems;
-import net.kaz.npcai.thirst.PlayerThirst;
-import net.kaz.npcai.thirst.PlayerThirstProvider;
-import net.kaz.npcai.villager.ModVillagers;
+import net.kaz.coolland.CoolLand;
+import net.kaz.coolland.thirst.PlayerThirst;
+import net.kaz.coolland.thirst.PlayerThirstProvider;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.npc.VillagerProfession;
-import net.minecraft.world.entity.npc.VillagerTrades;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.trading.MerchantOffer;
 import net.minecraftforge.common.capabilities.RegisterCapabilitiesEvent;
 import net.minecraftforge.event.AttachCapabilitiesEvent;
 import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.event.entity.player.PlayerEvent;
-import net.minecraftforge.event.village.VillagerTradesEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.LogicalSide;
 import net.minecraftforge.fml.common.Mod;
 
-import java.util.List;
-
-@Mod.EventBusSubscriber(modid= NPCai.MOD_ID)
+@Mod.EventBusSubscriber(modid= CoolLand.MOD_ID)
 public class ModEvents {
     @SubscribeEvent
     public static void onAttachCapabilitiesPlayer(AttachCapabilitiesEvent<Entity> event) {
         if (event.getObject() instanceof Player) {
             if(!event.getObject().getCapability(PlayerThirstProvider.PLAYER_THIRST).isPresent()) {
-                event.addCapability(new ResourceLocation(NPCai.MOD_ID, "properties"), new PlayerThirstProvider());
+                event.addCapability(new ResourceLocation(CoolLand.MOD_ID, "properties"), new PlayerThirstProvider());
             }
         }
     }

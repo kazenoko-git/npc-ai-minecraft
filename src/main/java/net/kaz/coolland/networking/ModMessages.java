@@ -1,8 +1,8 @@
-package net.kaz.npcai.networking;
+package net.kaz.coolland.networking;
 
-import net.kaz.npcai.NPCai;
-import net.kaz.npcai.networking.packet.DrinkWaterC2SPacket;
-import net.kaz.npcai.networking.packet.ExampleC2SPacket;
+import net.kaz.coolland.CoolLand;
+import net.kaz.coolland.networking.packet.DrinkWaterC2SPacket;
+import net.kaz.coolland.networking.packet.ExampleC2SPacket;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraftforge.network.NetworkDirection;
@@ -21,7 +21,7 @@ public class ModMessages {
 
     public static void register() {
         SimpleChannel net = NetworkRegistry.ChannelBuilder
-                .named(new ResourceLocation(NPCai.MOD_ID, "messages"))
+                .named(new ResourceLocation(CoolLand.MOD_ID, "messages"))
                 .networkProtocolVersion(() -> "1.0")
                 .clientAcceptedVersions(s -> true)
                 .serverAcceptedVersions(s -> true)
